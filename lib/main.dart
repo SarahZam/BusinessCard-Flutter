@@ -14,34 +14,86 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
             child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Center(
-              child: CircleAvatar(
+
+              CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('images/propic.jpg'),
               ),
-            ),
+
 
             SizedBox(height: 10.0),
 
             Text(
               'Sarah Zaman',
               style: TextStyle(
-                fontSize: 25.0,
+                fontSize: 35.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.amberAccent[100],
                 fontFamily: 'DancingScript',
               ),
             ),
+            SizedBox(height: 10.0),
             Text(
               'Full Stack Developer',
               style: TextStyle(
-                fontSize: 20.0,
+                fontSize: 25.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.amberAccent[100],
                 fontFamily: 'SourceSansPro',
               ),
             ),
+            SizedBox(height: 20.0,
+            width: 150.0,
+            child: Divider(
+              color: Colors.white,
+            )),
+            Card(
+              color: Colors.amberAccent[100],
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+
+              child: Center(
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 35.0,
+                    color: Colors.red[900],
+                  ),
+                  title: Text(
+                    '+1 585 490 5546',
+                    style: TextStyle(
+                        color: Colors.red[900],
+                        fontSize: 20.0
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+
+
+
+            Card(
+              color: Colors.amberAccent[100],
+              margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 50.0),
+
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  size: 35.0,
+                  color: Colors.red[900],
+                ),
+                title: Text(
+                  'szaman@u.rochester.edu',
+                  style: TextStyle(
+                      color: Colors.red[900],
+                      fontSize: 18.0
+                  ),
+                ),
+              ),
+            ),
+
 
             // Container(
             //   height: 100.00,
